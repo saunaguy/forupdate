@@ -50,15 +50,15 @@ const App = () => {
   }, [enemies, playerPos]);
 
   return (
-    <div style={{ position: 'relative', height: '100vh' }}>
+    <div style={{ position: 'relative', height: '80vh' }}>
       {gameOver && <h1 style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>Game Over</h1>}
       <div
         style={{
           position: 'absolute',
           bottom: 0,
           left: playerPos.x,
-          width: 50,
-          height: 50,
+          width: "50px",
+          height: "50px",
           backgroundColor: 'red',
         }}
       />
